@@ -331,3 +331,9 @@ AT_KEYWORDS([tdef])
 cat $abs_srcdir/tdef/tdef_test.ok > expout
 AT_CHECK([$abs_top_builddir/tests/tdef/tdef_test], [0], [expout], [ignore])
 AT_CLEANUP
+
+AT_SETUP([context])
+AT_KEYWORDS([context])
+cat $abs_srcdir/context/context_test.ok > expout
+AT_CHECK([$abs_top_builddir/tests/context/context_test], [0], [expout], [ignore])
+AT_CLEANUP
